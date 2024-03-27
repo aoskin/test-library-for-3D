@@ -6,7 +6,34 @@
   <title>Document</title>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.81/build/spline-viewer.js"></script>
 </head>
+<style>
+  body {
+    background: #000;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+  }
+  .model {
+    width: 1200px;
+    height: 1200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 32px;
+  }
+</style>
 <body>
-  <spline-viewer url="https://prod.spline.design/oKocZ055rl9OIxn2/scene.splinecode"></spline-viewer>
+  <main>
+    <div class="model">
+      <spline-viewer class="3d" url="https://prod.spline.design/wX3x8kh2AAJPbB9v/scene.splinecode"></spline-viewer>
+    </div>
+    <h1 class="text">26 АПРЕЛЯ
+      МОСКВА, ИННОВАЦИОННЫЙ ЦЕНТР «СКОЛКОВО», ТЕХНОПАРК, БОЛЬШОЙ БУЛЬВАР, 42</h1>
+  </main>
 </body>
 </html>
